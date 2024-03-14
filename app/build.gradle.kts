@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    kotlin("kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -63,4 +65,30 @@ dependencies {
     androidTestImplementation(Dependencies.uiTestJunit4)
     debugImplementation(Dependencies.composeUit)
     debugImplementation(Dependencies.composeUitm)
+
+    implementation(project(Modules.utilities))
+
+    implementation(Dependencies.hiltAndroid)
+    kapt(Dependencies.hiltCompiler)
+    kapt(Dependencies.hiltAndroidCompiler)
+
+    implementation(Dependencies.hiltNavigationCompose)
+
+    implementation(Dependencies.retrofit)
+    implementation(Dependencies.okhttp)
+    implementation(Dependencies.gsonConverter)
+    implementation(Dependencies.moshiConverter)
+    implementation(Dependencies.moshi)
+    implementation(Dependencies.loggingInterceptor)
+
+    implementation(Dependencies.coroutinesAndroid)
+    implementation(Dependencies.coroutinesCore)
+
+    implementation(Dependencies.splashScreen)
+
+    implementation(Dependencies.coilForImages)
+}
+
+kapt{
+    correctErrorTypes = true
 }

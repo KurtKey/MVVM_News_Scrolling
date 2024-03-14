@@ -15,7 +15,27 @@ object Versions {
     const val uiTestJunit4 = "ui-test-junit4"
     const val composeUit = "ui-tooling"
     const val composeUitm = "ui-test-manifest"
+    const val appcompact = "1.6.1"
+    const val material = "1.9.0"
 
+    const val hiltAndroid = "2.48"
+    const val hiltAndroidCompiler = "2.48"
+    const val hiltCompiler = "1.2.0"
+    const val hiltNavigationCompose = "1.2.0"
+
+    const val retrofit = "2.9.0"
+    const val okhttp = "4.12.0"
+    const val gsonConverter = "2.9.0"
+    const val moshi = "1.15.0"
+    const val moshiConverter = "2.9.0"
+    const val loggingInterceptor = "4.12.0"
+
+    const val coroutinesAndroid = "1.3.9"
+    const val coroutinesCore = "1.8.0"
+
+    const val splashScreen = "1.0.0"
+
+    const val coilForImages = "2.6.0"
 
 
 

@@ -2,4 +2,12 @@
 <resources>
 
     <style name="Theme.NewsScrolling" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="SplashScreenTheme" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/news_icon</item>
+        <item name="postSplashScreenTheme">@style/Theme.NewsScrolling</item>
+
+
+    </style>
 </resources>
